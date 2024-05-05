@@ -52,11 +52,11 @@ const Subscriptions = () => {
         <div key={index} className="subscription-section">
           <div className="subscription-container">
             <div className="subscription-card">
-              <p className='type'>{val.type}</p>
-              <h3>{val.title}</h3>
-              <hr />
+              <p className='type'>{' '}{val.type}</p>
+              <h2>{val.title}</h2>
+              <hr/>
 {val.features.map((feature, index) => (
-<p key={index} style={{ textDecoration: feature.isEnable ? 'none' : 'line-through',color: feature.isEnable ? 'black' : '#807b7b' }}>{feature.isEnable && <i className="fa-solid fa-check"></i>}{!feature.isEnable && <i className="fa-solid fa-xmark"></i>} {'  '}{feature.title}</p>
+<p key={index} style={{textAlign:'left',marginLeft:'5px', textDecoration: feature.isEnable ? 'none' : 'line-through',color: feature.isEnable ? 'black' : '#807b7b' }}>{feature.isEnable && <i className="fa-solid fa-check"></i>}{!feature.isEnable && <i className="fa-solid fa-xmark"></i>} {' '}{feature.title}</p>
 ))}
               <button className='btn'>button</button>
             </div>
