@@ -1,0 +1,55 @@
+#root
+{
+  width: 80%;
+  height: 80%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #2b88de;
+}
+
+.full-page {
+  display: flex;
+  width: 100 vw;
+  justify-content: space-evenly;
+  margin: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.subscription-section {
+  flex:1;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.subscription-container {
+  flex:1;
+  margin: 10px;
+}
+
+.subscription-card {
+  background: white;
+  border: 1px solid #000000;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+.btn
+{
+  width:80%;
+  background-color:  #2b88de;
+  border-radius: 10px;
+}
+
+.type
+{
+  color: #807b7b;
+}
